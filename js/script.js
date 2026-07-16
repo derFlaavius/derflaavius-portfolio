@@ -5,7 +5,7 @@
 const calendarEntries = [
   { date: "2024-07-18", time: "19:00", type: "stream", title: "Community-Stream" },
   { date: "2026-08-28", time: "09:00", type: "event", title: "Gamescom" },
-  { date: "2026-08-13", endDate: "2026-08-24", type: "pause", title: "Stream-Pause" }
+  { date: "2026-08-13", endDate: "2026-08-24", type: "pause", title: "Sommerpause" }
 ];
 
 const channelData = {
