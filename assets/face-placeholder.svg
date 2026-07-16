@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Porträt Platzhalter</title>
+  <desc id="desc">Platzhalter für das Gesichtsfoto von derFlaavius.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f1528"/>
+      <stop offset="60%" stop-color="#120b18"/>
+      <stop offset="100%" stop-color="#291423"/>
+    </linearGradient>
+    <linearGradient id="halo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd84a"/>
+      <stop offset="100%" stop-color="#ff3ca6"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" rx="72" fill="url(#bg)"/>
+  <circle cx="450" cy="240" r="150" fill="url(#halo)" opacity="0.16"/>
+  <circle cx="450" cy="285" r="136" fill="#ffd84a"/>
+  <path d="M260 734c18-150 120-240 190-240s172 90 190 240" fill="#ff3ca6" opacity="0.9"/>
+  <path d="M309 716c18-103 88-165 141-165s123 62 141 165" fill="#fff8dd" opacity="0.16"/>
+  <text x="450" y="770" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" letter-spacing="8" fill="#ffffff">DEIN FOTO</text>
+  <text x="450" y="822" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="3" fill="#b9aebf">assets/face-placeholder.svg ersetzen</text>
+</svg>

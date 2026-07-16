@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Platzhalter</title>
+  <desc id="desc">Platzhaltergrafik für das Streamer-Logo von derFlaavius.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffd84a"/>
+      <stop offset="100%" stop-color="#ff3ca6"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#120b18"/>
+  <rect x="10" y="10" width="236" height="236" rx="46" fill="url(#bg)" opacity="0.18"/>
+  <rect x="18" y="18" width="220" height="220" rx="40" fill="none" stroke="#ffffff" stroke-opacity="0.18"/>
+  <circle cx="128" cy="88" r="34" fill="#ffd84a" opacity="0.95"/>
+  <path d="M78 178c12-33 38-49 50-49s38 16 50 49" fill="none" stroke="#fff8dd" stroke-width="16" stroke-linecap="round"/>
+  <text x="128" y="213" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="4" fill="#ffffff">LOGO</text>
+</svg>
