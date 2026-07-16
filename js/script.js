@@ -73,7 +73,7 @@ function initRevealAnimation() {
 
 function initCounters() {
   const counters = document.querySelectorAll(".stat-value[data-count]");
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches || window.matchMedia("(max-width: 820px)").matches;
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   const animate = (element) => {
     const target = Number(element.dataset.count);
