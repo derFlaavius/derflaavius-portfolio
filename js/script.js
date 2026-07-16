@@ -66,14 +66,14 @@ function initRevealAnimation() {
       entry.target.classList.add("is-visible");
       obs.unobserve(entry.target);
     });
-  }, { threshold: 0.12 });
+  }, { threshold: 0.05, rootMargin: "0px 0px 80px 0px" });
 
   items.forEach((item) => observer.observe(item));
 }
 
 function initCounters() {
   const counters = document.querySelectorAll(".stat-value[data-count]");
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches || window.matchMedia("(max-width: 820px)").matches;
 
   const animate = (element) => {
     const target = Number(element.dataset.count);
