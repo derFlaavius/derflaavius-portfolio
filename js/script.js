@@ -3,13 +3,13 @@
 // type: "stream", "event" oder "pause"
 // date/endDate: YYYY-MM-DD | time ist optional
 const calendarEntries = [
-  { date: "2026-07-18", time: "19:00", type: "stream", title: "Community-Stream" },
-  { date: "2026-07-25", time: "18:00", type: "event", title: "Besonderes Community-Event" },
-  { date: "2026-08-17", endDate: "2026-08-23", type: "pause", title: "Stream-Pause" }
+  { date: "2024-07-18", time: "19:00", type: "stream", title: "Community-Stream" },
+  { date: "2026-08-28", time: "09:00", type: "event", title: "Gamescom" },
+  { date: "2026-08-13", endDate: "2026-08-24", type: "pause", title: "Stream-Pause" }
 ];
 
 const channelData = {
-  followers: 60,
+  followers: 50,
   averageViewers: 5,
   affiliateYear: 2025
 };
