@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initCounters();
   initTiltEffect();
   initSeamlessTicker();
+  initPartnerCode();
   initCalendar();
 });
 
@@ -173,6 +174,39 @@ function initSeamlessTicker() {
   window.addEventListener("resize", () => {
     window.clearTimeout(resizeTimer);
     resizeTimer = window.setTimeout(buildTicker, 160);
+  });
+}
+
+function initPartnerCode() {
+  const button = document.getElementById("copy-partner-code");
+  const code = document.getElementById("partner-code")?.textContent?.trim();
+  const status = document.getElementById("copy-code-status");
+
+  if (!button || !code) return;
+
+  button.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(code);
+      button.textContent = "Kopiert";
+      if (status) status.textContent = "Code gespeichert";
+    } catch (error) {
+      const textArea = document.createElement("textarea");
+      textArea.value = code;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.opacity = "0";
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      textArea.remove();
+      button.textContent = "Kopiert";
+      if (status) status.textContent = "Code gespeichert";
+    }
+
+    window.setTimeout(() => {
+      button.textContent = "Code kopieren";
+      if (status) status.textContent = "";
+    }, 2200);
   });
 }
 
