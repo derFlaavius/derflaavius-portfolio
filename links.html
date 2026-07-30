@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alle wichtigen Links von derFlaavius auf einer Seite: Twitch, Discord, Instagram, Events und Kontakt.">
+  <meta name="theme-color" content="#120b18">
+  <title>Links | derFlaavius</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Strait&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="subpage-body linkpage-body">
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Zur Startseite">
+      <span class="brand-mark" aria-hidden="true"><img src="assets/profilbild.png" alt=""></span>
+      <span class="brand-copy"><strong>derFlaavius</strong><small>VARIETY STREAMER</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Navigation öffnen">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#about">Über mich</a>
+      <a href="index.html#partners">Partner</a>
+      <a href="index.html#content">Content</a>
+      <a href="index.html#schedule">Streamplan</a>
+      <a href="events.html">Events</a>
+      <a href="links.html" aria-current="page">Links</a>
+      <a class="nav-cta" href="https://www.twitch.tv/derflaavius" target="_blank" rel="noreferrer">Live auf Twitch</a>
+    </nav>
+  </header>
+
+  <main class="linkpage-main section-shell">
+    <section class="link-profile reveal">
+      <div class="link-profile-image">
+        <img src="assets/profilbild.png" alt="Profilbild von derFlaavius">
+      </div>
+      <span class="section-kicker">ALLE WEGE FÜHREN INS CHAOS</span>
+      <h1>derFlaavius</h1>
+      <p>Streams, Community, Events und der übliche kontrollierte Unsinn. Hier findest du alles, ohne erst das Internet archäologisch ausgraben zu müssen.</p>
+      <div class="hero-meta link-profile-tags" aria-label="Kanalmerkmale">
+        <span>Variety</span><span>Community</span><span>Interaktiv</span>
+      </div>
+    </section>
+
+    <section class="link-hub reveal" data-delay="100" aria-labelledby="link-hub-title">
+      <div class="link-hub-heading">
+        <span class="section-kicker">DIREKT WEITER</span>
+        <h2 id="link-hub-title">Werde Teil des Problems.</h2>
+      </div>
+
+      <div class="link-list">
+        <!--
+          EIGENEN LINK HINZUFÜGEN:
+          Kopiere einen vollständigen <a class="link-card">-Block und ändere:
+          1. href="..."                 Zieladresse
+          2. link-card-icon              kurzes Symbol oder Emoji
+          3. <strong>...</strong>         sichtbarer Titel
+          4. <span>...</span>             kurze Beschreibung
+
+          Für interne Seiten wie events.html kannst du target und rel weglassen.
+        -->
+
+        <a class="link-card link-card-featured" href="https://www.twitch.tv/derflaavius" target="_blank" rel="noreferrer">
+          <span class="link-card-icon" aria-hidden="true">▶</span>
+          <span class="link-card-copy">
+            <strong>Twitch</strong>
+            <span>Schlechte Entscheidungen in Echtzeit.</span>
+          </span>
+          <span class="link-card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="link-card" href="https://discord.gg/Ka4Wmqj2xQ" target="_blank" rel="noreferrer">
+          <span class="link-card-icon" aria-hidden="true">#</span>
+          <span class="link-card-copy">
+            <strong>Discord</strong>
+            <span>Schlechte Entscheidungen Offstream</span>
+          </span>
+          <span class="link-card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="link-card" href="https://www.instagram.com/derflaavius/" target="_blank" rel="noreferrer">
+          <span class="link-card-icon" aria-hidden="true">◎</span>
+          <span class="link-card-copy">
+            <strong>Instagram</strong>
+            <span>Clips, Ankündigungen und Inhalte rund um den Stream.</span>
+          </span>
+          <span class="link-card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="link-card" href="https://www.youtube.com/@derflaavius" target="_blank" rel="noreferrer">
+          <span class="link-card-icon" aria-hidden="true">◎</span>
+          <span class="link-card-copy">
+            <strong>YouTube</strong>
+            <span>Clips, Reactions und alte Streams.</span>
+          </span>
+          <span class="link-card-arrow" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="link-card" href="events.html">
+          <span class="link-card-icon" aria-hidden="true">✦</span>
+          <span class="link-card-copy">
+            <strong>Events & Specials</strong>
+            <span>Alle größeren Challenges und Community-Aktionen im Überblick.</span>
+          </span>
+          <span class="link-card-arrow" aria-hidden="true">→</span>
+        </a>
+
+
+        <!-- WEITEREN LINK DIREKT ÜBER DIESER ZEILE EINFÜGEN -->
+      </div>
+    </section>
+
+    <p class="linkpage-note reveal" data-delay="160">Ein Link fehlt? Dann ist er vermutlich noch nicht wichtig genug. Oder Marc hat ihn einfach noch nicht eingetragen.</p>
+  </main>
+
+  <footer class="site-footer section-shell subpage-footer">
+    <a class="brand footer-brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true"><img src="assets/profilbild.png" alt=""></span>
+      <span class="brand-copy"><strong>derFlaavius</strong><small>WERDE TEIL DES PROBLEMS</small></span>
+    </a>
+    <div class="footer-links">
+      <a href="index.html">Startseite</a>
+      <a href="events.html">Events</a>
+      <a href="links.html">Links</a>
+      <a href="impressum.html">Impressum</a>
+    </div>
+    <p>© <span id="current-year">2026</span> derFlaavius. Alle Rechte und ein paar schlechte Entscheidungen vorbehalten.</p>
+  </footer>
+</body>
+</html>

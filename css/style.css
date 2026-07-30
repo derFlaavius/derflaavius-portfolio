@@ -922,6 +922,20 @@ img { max-width: 100%; display: block; }
   border-color: rgba(255,216,74,.25);
   transform: rotate(-18deg);
 }
+
+.event-card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.event-card-media:has(img) .event-card-symbol {
+  display: none;
+}
+
 .event-demo-badge {
   position: absolute;
   top: 24px;
@@ -1176,4 +1190,202 @@ img { max-width: 100%; display: block; }
   }
   .legal-flow-section p,
   .legal-flow-section address { font-size: .95rem; }
+}
+
+
+/* Zentrale Linkseite */
+.main-nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+.linkpage-main {
+  max-width: 760px;
+  padding-top: 78px;
+  padding-bottom: 92px;
+}
+
+.link-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.link-profile-image {
+  width: 118px;
+  aspect-ratio: 1;
+  margin-bottom: 24px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 34px;
+  background: linear-gradient(135deg, rgba(255, 60, 166, .34), rgba(255, 216, 74, .18));
+  box-shadow: 0 22px 65px rgba(255, 60, 166, .18);
+}
+
+.link-profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 28px;
+}
+
+.link-profile h1 {
+  margin: 12px 0 10px;
+  font-size: clamp(3rem, 9vw, 5.2rem);
+  line-height: .95;
+  letter-spacing: -.065em;
+}
+
+.link-profile > p {
+  max-width: 620px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.link-profile-tags {
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.link-hub {
+  margin-top: 58px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .055), transparent 34%),
+    rgba(18, 11, 24, .76);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.link-hub-heading {
+  margin-bottom: 24px;
+}
+
+.link-hub-heading h2 {
+  margin: 8px 0 0;
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+
+.link-list {
+  display: grid;
+  gap: 12px;
+}
+
+.link-card {
+  min-height: 86px;
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: 48px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, .035);
+  transition: transform .2s ease, border-color .2s ease, background .2s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 118, 197, .45);
+  background: rgba(255, 255, 255, .065);
+}
+
+.link-card-featured {
+  border-color: rgba(255, 60, 166, .38);
+  background: linear-gradient(120deg, rgba(255, 60, 166, .16), rgba(255, 216, 74, .05));
+}
+
+.link-card-icon {
+  width: 48px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 118, 197, .24);
+  border-radius: 15px;
+  background: rgba(255, 60, 166, .1);
+  color: var(--pink-soft);
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.link-card-featured .link-card-icon {
+  border-color: rgba(255, 216, 74, .25);
+  background: rgba(255, 216, 74, .1);
+  color: var(--yellow);
+}
+
+.link-card-copy {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.link-card-copy strong {
+  font-size: 1rem;
+}
+
+.link-card-copy span {
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.45;
+}
+
+.link-card-arrow {
+  color: var(--pink-soft);
+  font-size: 1.15rem;
+  transition: transform .2s ease;
+}
+
+.link-card:hover .link-card-arrow {
+  transform: translateX(3px);
+}
+
+.linkpage-note {
+  max-width: 580px;
+  margin: 25px auto 0;
+  color: var(--muted);
+  font-size: .82rem;
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  .linkpage-main {
+    padding-top: 54px;
+    padding-bottom: 68px;
+  }
+
+  .link-profile-image {
+    width: 98px;
+    border-radius: 28px;
+  }
+
+  .link-profile-image img {
+    border-radius: 22px;
+  }
+
+  .link-hub {
+    margin-top: 42px;
+    padding: 20px;
+    border-radius: 24px;
+  }
+
+  .link-card {
+    min-height: 76px;
+    padding: 13px;
+    grid-template-columns: 42px minmax(0, 1fr) 22px;
+    gap: 12px;
+  }
+
+  .link-card-icon {
+    width: 42px;
+    border-radius: 13px;
+  }
+
+  .link-card-copy span {
+    font-size: .76rem;
+  }
 }
