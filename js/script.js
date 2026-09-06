@@ -10,7 +10,7 @@ const calendarEntries = [
 ];
 
 const channelData = {
-  followers: 60,
+  followers: 70,
   averageViewers: 6,
   affiliateYear: 2025
 };

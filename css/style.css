@@ -1389,3 +1389,115 @@ img { max-width: 100%; display: block; }
     font-size: .76rem;
   }
 }
+
+/* Tech & Messe */
+.tech-section {
+  padding-block: 125px;
+  border-block: 1px solid rgba(255,255,255,.06);
+  background:
+    radial-gradient(circle at 82% 18%, rgba(112,182,255,.08), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,.012), rgba(255,216,74,.018));
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1.04fr .96fr;
+  gap: 18px;
+  align-items: stretch;
+}
+.tech-intro,
+.messe-card {
+  min-height: 440px;
+  padding: 34px;
+}
+.tech-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tech-label,
+.messe-kicker,
+.messe-badge,
+.messe-year {
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.tech-label { color: #9bc7ff; }
+.tech-intro h3,
+.messe-card h3 {
+  margin: 14px 0 14px;
+  font-size: clamp(1.75rem, 3vw, 2.55rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+.tech-intro p,
+.messe-card p { color: var(--muted); }
+.tech-intro p { max-width: 680px; margin: 0 0 14px; }
+.tech-tags { margin-top: 18px; }
+.messe-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(112,182,255,.22);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(155deg, rgba(112,182,255,.085), rgba(255,60,166,.045) 45%, rgba(20,13,26,.88));
+  box-shadow: var(--shadow);
+}
+.messe-card::after {
+  content: "IT";
+  position: absolute;
+  right: -6px;
+  bottom: -50px;
+  color: rgba(255,255,255,.025);
+  font-size: 13rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.09em;
+  pointer-events: none;
+}
+.messe-card > * { position: relative; z-index: 1; }
+.messe-card-head { display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.messe-badge {
+  padding: 7px 10px;
+  border: 1px solid rgba(255,216,74,.24);
+  border-radius: 999px;
+  color: var(--yellow);
+  background: rgba(255,216,74,.06);
+}
+.messe-year { color: #8f8294; }
+.messe-kicker { display: inline-block; margin-top: 38px; color: var(--pink-soft); }
+.messe-points {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.messe-points li {
+  position: relative;
+  padding-left: 20px;
+  color: #cfc4d2;
+  font-size: .88rem;
+}
+.messe-points li::before {
+  content: "↗";
+  position: absolute;
+  left: 0;
+  color: #9bc7ff;
+}
+
+@media (max-width: 900px) {
+  .tech-grid { grid-template-columns: 1fr; }
+  .tech-intro, .messe-card { min-height: auto; }
+}
+
+@media (max-width: 680px) {
+  .tech-section { padding-block: 90px; }
+  .tech-intro, .messe-card { padding: 25px; }
+  .messe-card::after { font-size: 9rem; }
+}
