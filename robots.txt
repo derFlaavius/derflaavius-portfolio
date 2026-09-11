@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://derflaavius.com/sitemap.xml
